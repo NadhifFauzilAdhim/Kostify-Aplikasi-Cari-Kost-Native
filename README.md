@@ -53,9 +53,9 @@
    ```
    For database access, please contact us at <a href="https://ndfproject.my.id">ndfproject.my.id</a>
    
-## Change Setting
+## Modify Setting
 
-3. **change Database setting at app/config/config.php**
+3. **Modify the database settings in app/config/config.php as follows:**
    ```bash
    
     define('BASEURL','http://kostifynative.test/'); // BASE URL
