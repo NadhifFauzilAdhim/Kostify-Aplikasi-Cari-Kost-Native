@@ -65,3 +65,77 @@
     define('DB_NAME','kostifymaindatabase');        // DB NAME
 
    ```
+## App Structure
+
+```
+└── 📁app
+    └── 📁config
+        └── config.php
+    └── 📁controllers
+        └── Dashboard.php
+        └── ErrorController.php
+        └── Home.php
+        └── Login.php
+        └── Logout.php
+        └── Profile.php
+        └── Register.php
+    └── 📁core
+        └── App.php
+        └── Controller.php
+        └── Database.php
+        └── Flasher.php
+        └── Mailer.php
+    └── 📁models
+        └── Dashboard_model.php
+        └── Listing_model.php
+        └── User_dashboard_model.php
+        └── User_model.php
+    └── 📁views
+        └── 📁alllist
+            └── listing.php
+        └── 📁auth
+            └── forgot_password.php
+            └── login.php
+            └── register.php
+            └── reset_password.php
+        └── 📁components
+            └── 📁dashboard
+                └── footer.php
+                └── header.php
+                └── sidebarnav.php
+            └── footer.php
+            └── header.php
+            └── navbar.php
+        └── 📁dashboard
+            └── createpost.php
+            └── editpost.php
+            └── index.php
+            └── payment.php
+            └── paymentdetail.php
+            └── post.php
+            └── request.php
+            └── resident.php
+            └── residentdetail.php
+            └── residentmgm.php
+        └── 📁detail
+            └── detail.php
+        └── 📁error
+            └── error403.php
+            └── error404.php
+        └── 📁home
+            └── index.php
+        └── 📁profile
+            └── index.php
+        └── 📁userdashboard
+            └── myrent.php
+            └── paymentoverview.php
+            └── paymentprocess.php
+            └── rent.php
+            └── userindex.php
+            └── userpayment.php
+            └── userrequest.php
+    └── .htaccess
+    └── init.php
+```
+
+
