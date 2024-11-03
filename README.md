@@ -30,15 +30,9 @@
 - Upload Images
 - Payment Management
 
-<div align="center">
+<div align="center" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
    <img height="300" src="https://i.ibb.co.com/74HfgNy/kostifyadv.png" alt="Kostify dashboard screenshot 1" />
-</div>
-
-<div align="center">
    <img height="300" src="https://i.ibb.co.com/M126LT8/kostifyadv1.png" alt="Kostify dashboard screenshot 2" />
-</div>
-
-<div align="center">
    <img height="300" src="https://i.ibb.co.com/jfjv2T5/kostifyadv2.png" alt="Kostify dashboard screenshot 3" />
 </div>
 
