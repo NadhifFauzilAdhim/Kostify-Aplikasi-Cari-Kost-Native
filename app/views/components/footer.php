@@ -7,10 +7,6 @@
               <address>Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</address>
               <ul class="list-unstyled links">
                 <li><a href="tel://085727785062">+62 85-7277-85062</a></li>
-               
-                <li>
-                  <a href="mailto:info@mydomain.com">nadhiffauzil@students.amikom.ac.id</a>
-                </li>
               </ul>
             </div>
       
