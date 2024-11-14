@@ -42,7 +42,7 @@
 
 1. **Clone the Project**
    ```bash
-   git clone https://github.com/yourusername/kostify.git
+   git clone https://github.com/NadhifFauzilAdhim/Kostify-Aplikasi-Cari-Kost-Native.git
    ```
    
 ## Import Database
