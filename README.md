@@ -1,44 +1,61 @@
-<div align="center">
+<<div align="center">
   <img height="200" src="https://i.ibb.co.com/Gf6PnKW/Kostifyop.png" alt="Kostify logo" />
-</div>
+  <h1>Kostify Native MVC</h1>
+  
+  [![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-777BB4?logo=php)](https://php.net/)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
-<h2 align="center">Kostify Native MVC</h2>
-
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="PHP logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="Bootstrap logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="HTML5 logo" />
 </div>
 
 ---
 
-## Features
+## 🚀 Technologies
 
-- Login
-- Register
-- Forgot Password
-- Email Verification with SMTP
-- Dashboard
-- Post, Edit, Delete Property
-- Manage Resident
-- Manage Payment
-- Property Request
-- Upload Images
-- Payment Management
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="PHP" title="PHP"/>
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" title="JavaScript"/>
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="Bootstrap" title="Bootstrap"/>
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="MySQL" title="MySQL"/>
+</div>
+
+---
+
+## ✨ Features
+
+- 🔐 Authentication System
+  - User Login/Registration
+  - Password Recovery
+  - Email Verification (SMTP)
+- 🏠 Property Management
+  - Create/Edit/Delete Listings
+  - Image Uploads
+  - Property Requests
+- 💰 Payment System
+  - Payment Tracking
+  - Transaction History
+  - Payment Reminders
+- 👥 User Management
+  - Resident Profiles
+  - Role-based Access
+  - Activity Logs
+
+---
+
+## 📸 Screenshots
 
 <div align="center" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-   <img height="300" src="https://i.ibb.co.com/74HfgNy/kostifyadv.png" alt="Kostify dashboard screenshot 1" />
-   <img height="300" src="https://i.ibb.co.com/M126LT8/kostifyadv1.png" alt="Kostify dashboard screenshot 2" />
-   <img height="300" src="https://i.ibb.co.com/jfjv2T5/kostifyadv2.png" alt="Kostify dashboard screenshot 3" />
+  <img height="300" src="https://i.ibb.co.com/74HfgNy/kostifyadv.png" alt="Dashboard Overview">
+  <img height="300" src="https://i.ibb.co.com/M126LT8/kostifyadv1.png" alt="Property Management">
+  <img height="300" src="https://i.ibb.co.com/jfjv2T5/kostifyadv2.png" alt="Payment System">
 </div>
 
 ---
 
-## Installation
+## ⚙️ Installation
 
 1. **Clone the Project**
    ```bash
