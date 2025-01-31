@@ -1,4 +1,4 @@
-<<div align="center">
+<div align="center">
   <img height="200" src="https://i.ibb.co.com/Gf6PnKW/Kostifyop.png" alt="Kostify logo" />
   <h1>Kostify Native MVC</h1>
   
