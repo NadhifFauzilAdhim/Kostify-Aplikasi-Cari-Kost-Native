@@ -12,7 +12,8 @@ define('DB_NAME','kostifymaindatabase');        // DB NAME
 //MAILER
 
 define('MAIL_MAILER', 'smtp');
-define('MAIL_HOST', ' ');
-define('MAIL_PORT', 2525);
-define('MAIL_USERNAME', ' ');
-define('MAIL_PASSWORD', ' ');
+define('MAIL_HOST', 'o');
+define('MAIL_PORT', 587);
+define('MAIL_USERNAME', '');
+define('MAIL_PASSWORD', '');
+define('MAIL_FROM', 'help@youtmail');

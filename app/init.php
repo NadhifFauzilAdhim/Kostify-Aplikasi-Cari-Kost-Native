@@ -1,9 +1,15 @@
-<?php 
-require_once 'core/App.php';
-require_once 'core/Controller.php';
-require_once 'core/Database.php';
-require_once 'core/Flasher.php';
-require_once 'config/config.php';
-require_once 'core/Mailer.php';
-require_once '../vendor/autoload.php'; 
+<?php
+// app/init.php
 
+// Core
+require_once __DIR__ . '/core/App.php';
+require_once __DIR__ . '/core/Controller.php';
+require_once __DIR__ . '/core/Database.php';
+require_once __DIR__ . '/core/Flasher.php';
+require_once __DIR__ . '/core/Mailer.php';
+
+// Config
+require_once __DIR__ . '/config/config.php';
+
+// Composer Autoload
+require_once __DIR__ . '/../vendor/autoload.php';

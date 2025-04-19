@@ -22,7 +22,7 @@
                   <h5 class="mb-3 ">Reset Password</h5>
                   <?php Flasher::flash()?>
                   <p>Silahkan Buat Password Baru</p>
-                  <form action="<?=BASEURL?>/login/handleResetPassword" method="POST" id="resetForm">
+                  <form action="<?=BASEURL?>login/handleResetPassword" method="POST" id="resetForm">
                 
                     <div class="form-outline mb-4">
                         <input type="hidden" id="token" name="token" value="<?= $data['token']?>" />

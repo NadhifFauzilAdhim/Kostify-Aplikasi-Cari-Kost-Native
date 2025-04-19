@@ -1,98 +1,53 @@
-<?php 
+<?php
+// kostifynative/app/core/App.php
+
 class App {
-    protected $controller = 'Home'; 
-    protected $method = 'index'; 
-    protected $params = []; 
+    protected $controller = 'Home';
+    protected $method     = 'index';
+    protected $params     = [];
 
     public function __construct() {
+        // 1. Parse URL
         $url = $this->parseURL();
 
-        if (isset($url[0])) {
-            if (file_exists('../app/controllers/' . $url[0] . '.php')) {
-                $this->controller = $url[0];
-                unset($url[0]);
-            } else {
-                $this->controller = 'ErrorController';
-                $this->method = 'show404';
-            }
+        // 2. Controller selection
+        if (!empty($url[0]) &&
+            file_exists(__DIR__ . '/../controllers/' . ucfirst($url[0]) . '.php')
+        ) {
+            $this->controller = ucfirst($url[0]);
+            unset($url[0]);
+        } elseif (!empty($url[0])) {
+            $this->controller = 'ErrorController';
+            $this->method     = 'show404';
         }
-        require_once '../app/controllers/' . $this->controller . '.php';
+
+        // 3. Load controller class
+        require_once __DIR__ . '/../controllers/' . $this->controller . '.php';
         $this->controller = new $this->controller;
 
-    
-        if (isset($url[1])) {
-            if (method_exists($this->controller, $url[1])) {
-                $this->method = $url[1];
-                unset($url[1]);
-            } else {
-               
-                $this->controller = 'ErrorController';
-                require_once '../app/controllers/' . $this->controller . '.php';
-                $this->controller = new $this->controller;
-                $this->method = 'show404';
-            }
+        // 4. Method selection
+        if (!empty($url[1]) && method_exists($this->controller, $url[1])) {
+            $this->method = $url[1];
+            unset($url[1]);
+        } elseif (!empty($url[1])) {
+            require_once __DIR__ . '/../controllers/ErrorController.php';
+            $this->controller = new ErrorController();
+            $this->method     = 'show404';
         }
-        if (!empty($url)) {
-            $this->params = array_values($url);
-        }
+
+        // 5. Params
+        $this->params = $url ? array_values($url) : [];
+
+        // 6. Run the controller::method with params
         call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    // Parse URL
-    public function parseURL() {
+    private function parseURL() {
         if (isset($_GET['url'])) {
             $url = rtrim($_GET['url'], '/');
             $url = filter_var($url, FILTER_SANITIZE_URL);
-            $url = explode('/', $url);
-            return $url;
+            return explode('/', $url);
         }
+        return [];
     }
 }
-
-
-
-
-// class App{
-//     protected $controller = 'Home'; //Controller Default
-//     protected $method ='index'; //Method Default
-//     protected $params = [];
-//    public function __construct()
-//    {
-//     $url = $this->parseURL();
-//     //cek controller
-//     if (isset($url[0])){
-
-// 		if (file_exists('../app/controllers/' . $url[0] . '.php')){
-// 			$this->controller = $url[0];
-// 			unset($url[0]);
-			
-// 		}
-// 	}
-//     require_once '../app/controllers/'.$this->controller . '.php';
-//     $this->controller = new $this->controller;
-
-//     //cek method
-//     if(isset($url[1])){
-//         if(method_exists($this->controller,$url[1])){
-//             $this->method = $url[1];
-//             unset($url[1]);
-//         }
-//     }
-
-//     //Pramameter
-//     if(!empty($url)){
-//         $this->params = array_values($url);
-//     }
-//     call_user_func_array([$this->controller,$this->method],$this->params);
-
-//    }
-//    //Parse URL
-//    public function parseURL(){
-//     if(isset($_GET['url'])){
-//         $url = rtrim($_GET['url'],'/');
-//         $url = filter_var($url, FILTER_SANITIZE_URL);
-//         $url = explode('/',$url);
-//         return $url;
-//     }
-//    }
-// }

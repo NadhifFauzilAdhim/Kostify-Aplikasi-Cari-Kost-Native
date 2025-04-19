@@ -24,7 +24,7 @@
                       style="width: 185px;" alt="logo">
                   </div>
                   <?php Flasher::flash()?>
-                  <form action="<?= BASEURL?>/login/authenticate" method="POST"> 
+                  <form action="<?= BASEURL?>login/authenticate" method="POST"> 
                     <div class="form-outline mb-4">
                       <label class="form-label" for="email">Email</label>
                       <input type="email" id="email" name="email" class="form-control "
@@ -33,7 +33,7 @@
                     <div class="form-outline mb-4">
                       <label class="form-label" for="password">Password</label>
                       <input type="password" id="password" name="password" class="form-control " autofocus required/>
-                      <div id="frogotpassword" class="form-text"><a href="<?= BASEURL?>/login/forgotpassword" class="text-danger">Lupa Password?</a></div>
+                      <div id="frogotpassword" class="form-text"><a href="<?= BASEURL?>login/forgotpassword" class="text-danger">Lupa Password?</a></div>
                     </div>
                     <div class="text-center pt-1 mb-5 pb-1">
                       <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="sumbit">Log

@@ -34,6 +34,71 @@ foreach ($data['lists'] as $properti) {
   </div>
 </div>
 
+<div class="modal fade" id="openSourceModal" tabindex="-1" aria-labelledby="openSourceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content shadow-lg rounded-4">
+            <div class="modal-header  bg-gradient text-white border-0 position-relative">
+                <div class="position-absolute h-100 bg-white opacity-10 top-0 start-0"></div>
+                <h2 class="modal-title bg-white text-center w-100 fw-bold display-7" id="openSourceModalLabel">
+                    🚀 Welcome to Our Open-Source Project! 🌟
+                </h2>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center py-4">
+                <div class="mb-4">
+                    <p class="lead text-muted mb-3">
+                    This website is proudly developed using <strong>PHP Native</strong> with the <strong>MVC pattern</strong>, making it an excellent resource for learning and understanding structured web development. Explore the source code, contribute, and enhance your PHP skills! 🚀
+                    </p>
+                    <div class="d-flex justify-content-center gap-3 mb-4">
+                        <a href="https://github.com/NadhifFauzilAdhim/Kostify-Aplikasi-Cari-Kost-Native" 
+                           target="_blank" 
+                           class="btn btn-dark btn-lg rounded-pill px-4 shadow-sm hover-effect">
+                            <i class="fab fa-github me-2"></i>Star on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6">
+                        <a href="https://github.com/NadhifFauzilAdhim/Kostify-Aplikasi-Cari-Kost-Native" 
+                           target="_blank" 
+                           class="card h-100 border-0 shadow-sm hover-card text-decoration-none">
+                            <div class="card-body">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                                     alt="GitHub Logo" 
+                                     class="img-fluid mb-3" 
+                                     width="60">
+                                <h5 class="text-dark mb-0">Contribute</h5>
+                                <small class="text-muted">Open for PRs</small>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                      <a href="https://ndfproject.my.id/" target="_blank">
+                      <div class="card h-100 border-0 bg-light shadow-sm">
+                            <div class="card-body">
+                                <img src="<?= BASEURL?>/images/ndflogo.png" 
+                                     alt="NDF Logo" 
+                                     class="img-fluid" 
+                                     width="120">
+                                <h5 class="text-dark mt-2 mb-0">Maintained by</h5>
+                                <small class="text-muted">Nadhif Fauzil</small>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0 pt-0">
+                <button type="button" 
+                        class="btn btn-outline-primary rounded-pill px-4 shadow-none hover-effect" 
+                        data-bs-dismiss="modal">
+                    Let's Explore! <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -148,7 +213,7 @@ foreach ($data['lists'] as $properti) {
           </h4>
        
           <form
-            action="/kostifynative/"
+            action="<?= BASEURL?>"
             method="GET"
             class="custom-form mt-4 pt-2 mb-5"
             role="search"
@@ -630,6 +695,16 @@ foreach ($data['lists'] as $properti) {
         myModal.show();
       });
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var myModal = new bootstrap.Modal(document.getElementById('openSourceModal'), {
+            backdrop: 'static',
+            keyboard: false
+        });
+        myModal.show();
+    });
+</script>
+
    
   
     
